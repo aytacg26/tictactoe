@@ -131,12 +131,27 @@ window.onload = () => {
 
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
+      button.classList.remove('ghost-X');
+      button.classList.remove('ghost-O');
       selectedBox(button);
       addClickedButtons(button);
 
       if (clickedButtons.length > 4) {
         evaluateWinner(clickedButtons);
       }
+      button.removeEventListener('click');
+      button.removeEventListener('mouseover');
+      button.removeEventListener('mouseout');
+    });
+
+    button.addEventListener('mouseover', () => {
+      button.innerText = current;
+      button.classList.add(`ghost-${current}`);
+    });
+
+    button.addEventListener('mouseout', () => {
+      button.innerText = '';
+      button.classList.remove(`ghost-${current}`);
     });
   });
 };

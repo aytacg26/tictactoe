@@ -286,6 +286,14 @@
   justify-content: center;
 }
 
+.ghost-X {
+  color: rgba(250, 26, 26, 0.3);
+}
+
+.ghost-O {
+  color: #221e1f8e;
+}
+
 @media (max-width: 600px) {
   .game-board button {
     font-size: 60px;
