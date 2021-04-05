@@ -4,6 +4,8 @@
 
 https://codepen.io/aytacg26/pen/MWJmqKe
 
+### Or at:
+https://aytacg26.github.io/tictactoe/
 
 ![Image of TICTACTOELOGO](https://i.ibb.co/K2qYj2t/repository-open-graph-template.png)
 
